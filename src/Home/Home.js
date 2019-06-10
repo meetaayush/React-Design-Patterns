@@ -9,6 +9,10 @@ const navs = [
   {
     name: "Pattern 1 - Compound components",
     url: "/pattern1"
+  },
+  {
+    name: "Pattern 2 - Render Props",
+    url: "/pattern2"
   }
 ];
 
