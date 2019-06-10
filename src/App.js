@@ -1,19 +1,17 @@
 import React from "react";
-import Header from "./components/header";
-import Toggle from "./components/Toggle";
+import { BrowserRouter, Route } from "react-router-dom";
+
+import Home from "./Home/Home";
+import Pattern1 from "./pattern1";
 
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Header title="Compound Components" />
-      <Toggle>
-        <Toggle.On>Checkbox is selected</Toggle.On>
-        <Toggle.Off>Checkbox is not selected</Toggle.Off>
-        <Toggle.Checkbox />
-      </Toggle>
-    </div>
+    <BrowserRouter>
+      <Route path="/" exact component={Home} />
+      <Route path="/pattern1" exact component={Pattern1} />
+    </BrowserRouter>
   );
 }
 
